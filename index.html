@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>To-do List</title>
+</head>
+
+<body>
+
+    <div class="main-modal">
+        <div class="modal-content">
+            <span>Выберите язык</span>
+            <div class="main-button" id="ru">Русский</div>
+            <div class="main-button" id="en">English</div>
+
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="main-menu">
+            <div class="main-title">
+                To-do List
+                <img class="img-lang" src="img/language.svg">
+            </div>
+            <div class="button-wrapper">
+                <div class="main-button" id="create-button">Создать задачу</div>
+                <div class="main-button" id="delete-button">Очистить список</div>
+            </div>
+            <div class="task">
+                <input class="task-field" name="task" placeholder="Введите задачу">
+            </div>
+        </div>
+        <div class="task-list"></div>
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

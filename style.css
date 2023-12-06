@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #808080;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
+
+.main-content {
+    position: relative;
+}
+
+.main-button {
+    text-align: center;
+    color: black;
+    background-color: white;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    user-select: none;
+    text-wrap: nowrap;
+
+    &:hover {
+        transition: background-color 250ms ease-in-out;
+        background-color: #808080;
+        cursor: pointer;
+    }
+}
+
+/* button */
+.button-wrapper {
+    display: flex;
+}
+
+.button-wrapper div {
+    width: 100%;
+}
+
+.main-title {
+    background-color: white;
+    font-size: 40px;
+    color: black;
+    border-radius: 10px;
+    margin: 5px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    user-select: none;
+}
+
+.task {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    margin: 5px;
+    word-wrap: break-word;
+    text-align: left;
+    padding: 5px;
+
+    .task-field {
+        margin: 5px;
+        border: none;
+        border-color: black;
+        outline: none;
+        width: 100%;
+        font-size: 25px;
+        padding: 0;
+        margin: 0;
+
+        &::placeholder {
+            text-align: center;
+        }
+    }
+}
+
+/* img */
+.img-lang {
+    height: 40px;
+    width: 40px;
+    right: 5px;
+    position: absolute;
+    padding: 2px;
+    cursor: pointer;
+
+
+    &:hover {
+        border: 2px solid #808080;
+        border-radius: 10px;
+        right: 3px;
+    }
+}
+
+
+.img-cross {
+    width: 20px;
+    float: right;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+
+}
+
+.main-menu {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    background-color: black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 1;
+}
+
+
+.task-list {
+    position: absolute;
+    top: 150px;
+    width: 100%;
+}
+
+
+
+.hide {
+    display: none;
+}
+
+/* modal */
+.modal-content {
+    margin-top: 5px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.main-modal {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    background-color: black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.task-table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-table-header div {
+    font-size: 20px;
+}
+
+.created {
+    display: flex;
+}
